@@ -67,9 +67,9 @@ test('Create a post on Facebook', async ({ page }) => {
   try {
     await postButton.waitFor({ timeout: 20000 });
     await postButton.click();
-    console.log('Post submitted successfully');
+    //console.log('Post submitted successfully');
   } catch (error) {
-    console.error('Could not find or click the Post button:', error);
+   // console.error('Could not find or click the Post button:', error);
     return;
   }
 });
