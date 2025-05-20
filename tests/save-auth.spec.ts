@@ -11,7 +11,7 @@ test('save facebook auth state', async ({ browser }) => {
   await page.goto('https://www.facebook.com/');
   await page.waitForLoadState('load');
 
-  // Wait for some time to ensure all cookies and local storage are loaded
+  
   await page.waitForTimeout(5000);
 
   // Save the storage state
@@ -19,7 +19,7 @@ test('save facebook auth state', async ({ browser }) => {
 
   console.log(`Authentication state saved to ${storageStatePath}`);
 
-  // Close the context and browser
+  
   await context.close();
   await browser.close();
 });
